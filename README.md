@@ -11,7 +11,7 @@
     <header>
         <div class="logo">Logo</div>
         <nav class="menu">
-            <a href="index.html">Home</a>
+            <a href="./html/index.html">Home</a>
             <a href="#">Cadastro</a>
             <a href="#">Relatorio</a>
         </nav>
