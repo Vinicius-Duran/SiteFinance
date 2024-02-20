@@ -1,40 +1,63 @@
-html {
-    height: 100%
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+
+header {
+    background-color: #000; /* Fundo preto para o cabeçalho */
+    color: #fff; /* Texto branco para o cabeçalho */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px; /* Arredonda o canto superior esquerdo */
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 10px rgba(128, 0, 128, 0.4);
+}
+
+.logo {
+    font-size: 24px;
 }
 
 body {
     margin: 0;
-    background-color: #f7f7f7;
-    background-color: black;
-
-    display: grid;
-    grid-template-areas:
-        "header"
-        "aside main"
-        "footer";
-
-    grid-template-rows: 64px lrf 88px;
-    grid-template-columns: 200px lgr;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fundo preto para a página */
+    color: #fff; /* Texto branco */
+    min-height: 100vh; /* Garante que a página tenha pelo menos a altura da janela do navegador */
+    display: flex;
+    flex-direction: column;
 }
 
-.cabecalho {
-    grid-area: header;
+main {
+    flex: 1; /* Faz com que o conteúdo principal preencha o espaço restante na página */
+}
 
-    height: 64px;
-    background-color: aquamarine;
+footer {
+    background-color: #000; /* Fundo preto para o rodapé */
+    color: #fff; /* Texto branco para o rodapé */
+    padding: 10px;
+    text-align: center; /* Alinha o texto ao centro */
+    box-shadow: 0 -5px 10px rgba(128, 0, 128, 0.5); /* Sombra roxa na parte superior */
+    margin-top: auto; /* Empurra o rodapé para a parte inferior da página */
+}
+
+.menu {
     display: flex;
     align-items: center;
 }
 
-.avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-}
+    .menu a {
+        color: #fff; /* Texto branco para links no cabeçalho */
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: color 10.1s ease;
+    }
 
-.footer {
-    height: 88px;
-}
+        .menu a:hover {
+            background-color: rgba(128, 0, 128, 0.8); /* Roxo escuro para links no cabeçalho ao passar o mouse */
+        }
